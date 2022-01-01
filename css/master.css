@@ -1,0 +1,289 @@
+/* Import Font Open Sana */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Start Header */
+header {
+    background-color: #f0f0f0;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+header .logo {
+    color: #0D6EFD;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+header .nav {
+    padding-right: 100px;
+}
+header .nav a {
+    color: slategray;
+    text-decoration: none;
+    margin-left: 20px;
+    border: 2px dotted #0D6EFD;
+    padding: 5px;
+}
+header .nav a:hover {
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+header i {
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+/* Start Biography */
+.bio {
+    /* background: #7474BF;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #348AC7, #7474BF); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: #2c3e50;  /*fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /*Chrome 10-25, Safari 5.1-6*/
+    background: linear-gradient(to right, #3498db, #2c3e50); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    /* background: url(/images/unnamed.webp) no-repeat center center / cover; */
+    color: white;
+    width: 100%;
+    height: 650px;
+    padding: 60px 120px;
+    margin: 0 auto;
+}
+.bio .main-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.bio .aboutme {
+    line-height: 1.8;
+}
+.bio span {
+    font-weight: 600;
+}
+.bio .image {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.bio .name {
+    font-weight: 600;
+    text-decoration: overline;
+    margin: 20px 45px;
+}
+.bio .social ul {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    margin-top: -150px;
+
+}
+.bio .social i {
+    /* color: #2c3e50; */
+    color: silver;
+    margin-right: 10px;
+}
+.bio .social i:hover {
+    opacity: 0.7;
+}
+/* Start Education */
+.edu {
+    padding:0 100px ;
+    background-color: #F0F0F0;
+    height: 870px;
+}
+.edu .main-title {
+    color:#0D6EFD ;
+    text-align: center;
+    border: 2px dotted #0D6EFD;
+}
+.edu .edu-page {
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    margin:15px auto;
+}
+.edu .edu-page .major span,
+.edu .edu-page .degree span {
+    font-weight: 600;
+}
+.edu .line {
+    width: 5px;
+    height: 180px;
+    margin:15px auto;
+    background-color:#0D6EFD;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.edu .channels {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* End Education */
+/* Start Work Experience */
+.Experience{
+    padding: 50px 100px;
+    text-align: center;
+    height: 800px;
+}
+.Experience .main-title {
+    color:#0D6EFD ;
+    text-align: center;
+    border: 2px dotted #0D6EFD;
+}
+.Experience .boxes {
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: repeat(2,250px);
+}
+.Experience .boxes .box {
+    border: 2px dotted #0D6EFD;
+}
+.Experience .boxes .box .title-job {
+    font-weight: 700;
+}
+.Experience .boxes .box .pargraph-description {
+    line-height: 1.9;
+}
+/* End Work Experience */
+/* Start Projects */
+.projects {
+    padding: 10px 100px;
+}
+.projects .main-title {
+    color: #0D6EFD;
+    text-align: center;
+    border: 2px dotted #0D6EFD;
+}
+.projects .proj .project {
+    border-bottom: 2px dotted #666;
+}
+.projects .proj .project .title .title-project {
+    font-size: 25px;
+}
+.projects .proj .project .description-project {
+    width: 600px;
+    line-height: 1.7;
+}
+.projects .date {
+    color: #666;
+    font-size: 14px;
+}
+/* End Projects */
+/* Start Skills & Experience */
+.Skills {
+    padding: 10px 100px;
+}
+.Skills .main-title {
+    color: #0D6EFD;
+    font-weight: 700;
+    text-align: center;
+    border: 2px dotted #0D6EFD ;
+}
+.Skills .pargraph-description {
+    color: #666;
+    text-align: center;
+}
+.Skills .div-One {
+    margin: 15px auto;
+    text-align: center;
+}
+.Skills .div-One .title ,
+.Skills .div-Two .title {
+    font-weight: 800;
+    text-align: center;
+}
+.Skills .div-One .languages p{
+    width: 800px;
+    line-height: 1.8;
+    margin: 15px auto;
+}
+.Skills .div-Two .pargraph {
+    text-align: center;
+    line-height: 1.8;
+}
+/* End Skills & Experience */
+/* Start Publications & News */
+.News {
+    padding: 10px 100px;
+}
+.News .main-title {
+    color: #0D6EFD;
+    text-align: center;
+    font-weight: 600;
+    border: 2px dotted #0D6EFD;
+}
+.News .pargraph {
+    color: #666;
+    text-align: center;
+}
+/* End Publications & News */
+/* Start My Works */
+.MyProjects {
+    padding: 40px 100px;
+}
+.MyProjects .apps .webSites img {
+    width: 100px;
+}
+.MyProjects .apps .webSites {
+    display: flex;
+    justify-content: space-between;
+}
+/* End My Works */
+/* Start Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.main-title {
+    width: 250px;
+    margin: 20px auto;
+}
+/* End Footer */
+/* Media Query */
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+   
+}
